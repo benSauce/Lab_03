@@ -7,7 +7,7 @@ public class SortGeneric {
 
 
         // Print the ArrayList with duplicates removed
-        System.out.println("Sup broski");
+        System.out.println("Starting sort()");
     } // End of main()
     public static <E extends Comparable<E>> void sort(E[] list){
 

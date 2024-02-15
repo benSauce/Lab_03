@@ -3,16 +3,16 @@ public class BinarySearch {
     // Driver/Test code
     public static void main(String[] args) {
         //driver code to test Comparable max method
-        // Integer[] arr = {2, 3, 4, 7, 9, 10, 40, 4, 10, 19, 23, 87, 6};
+        Integer[] arr = {2, 3, 4, 7, 9, 10, 40, 4, 10, 19, 23, 87, 6};
         //String[] arr = {"cat","dog","bat","rat","fog","nat","matt"};
-        String[] names = {"Caryn", "Debbie", "Dustin", "Elliot", "Jacquie", "Jonathan", "Rich"};
+        //String[] arr = {"Caryn", "Debbie", "Dustin", "Elliot", "Jacquie", "Jonathan", "Rich"};
 
         //Call method and print result
-        int myName = binarySearch(names, "Jonathan");
-        if (myName == -1){
+        int myElement = binarySearch(arr, 40);
+        if (myElement == -1){
             System.out.print("Element not found in array.");
         } else {
-            System.out.print(names[myName] + " was found at index: " + myName);
+            System.out.print(arr[myElement] + " was found at index: " + myElement);
         }
 
     } // End of main()

@@ -12,11 +12,16 @@ public class Lab3_pt6 {
     // Driver/Test code
     public static void main(String[] args) {
         //driver code to test Comparable max method
-        Integer[] intArr = {2, 3, 4, 7, 9, 10, 40, 4, 10, 19, 23, 87, 6};
-        String[] strArr = {"cat","dog","bat","rat","fog","nat","matt"};
+        ArrayList<Integer> intList = new ArrayList<>();
+        intList.add(5);
+        intList.add(7);
+        intList.add(12);
+        intList.add(65);
+        intList.add(22);
+        intList.add(16);
 
         //Call method and print result
-        System.out.print("Maximum element is: " + max(intArr));
+        System.out.print("Maximum element is: " + max(intList));
 
     } // End of main()
 
@@ -32,7 +37,7 @@ public class Lab3_pt6 {
     public static <E extends Comparable<E>> E max(ArrayList<E> list){
         //Set initial value
         E maxVal = list.get(0);
-//
+
         //parse through list
         for (int i = 0; i < list.size(); i++){
             //check if maxVal is less than list[i]

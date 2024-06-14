@@ -1,8 +1,8 @@
 /*
 *CS 2013
-*Lab 3 - Generics
+*Lab 3 - Generics Pt 1
 *Benjamin Saucedo
-*removeDuplicates (ArrayList<E> list)
+*public static <E> ArrayList<E> removeDuplicates (ArrayList<E> list)
 *   Implement this method so that it takes an array of any type
 *   and removes any duplicates.
 */

@@ -1,4 +1,12 @@
-public class BinarySearch {
+/*
+ *CS 2013
+ *Lab 3 - Generics Pt 4
+ *Benjamin Saucedo
+ *public static <E extends Comparable<E>> int binarySearch(E[] list, E key)
+ * use binary search to find a specified element in an array
+ */
+
+public class Lab3_pt4 {
 
     // Driver/Test code
     public static void main(String[] args) {
@@ -16,6 +24,13 @@ public class BinarySearch {
         }
 
     } // End of main()
+
+    /*
+    Take in an array of any type and a key of same type
+    use a binary search and recursive call to search for key
+    parameters: E[] list, E key, int startPt, int endPt
+    returns: int of index or -1 if not found
+    */
     public static <E extends Comparable<E>> int binarySearch(E[] list, E key, int startPt, int endPt) {
         //check length of array
         if (startPt > endPt) {
